@@ -1,0 +1,165 @@
+/* Desktop First Approach */
+
+/* Màn hình lớn (Large desktop) */
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1140px;
+        margin: 0 auto;
+        padding: 0 15px;
+    }
+
+    .recipe-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* Màn hình desktop thường */
+@media (max-width: 1199px) {
+    .container {
+        max-width: 960px;
+    }
+
+    .recipe-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Tablet */
+@media (max-width: 991px) {
+    .container {
+        max-width: 720px;
+    }
+
+    .main-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .category-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .site-logo {
+        max-width: 160px;
+    }
+}
+
+/* Tablet nhỏ và Mobile lớn */
+@media (max-width: 768px) {
+    .container {
+        max-width: 540px;
+    }
+
+    .nav-list {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .recipe-grid {
+        grid-template-columns: 1fr;
+        padding: 1rem;
+    }
+
+    .category-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .search-form {
+        max-width: 100%;
+        padding: 0 1rem;
+    }
+
+    .post-title {
+        font-size: 2rem;
+    }
+
+    .recipe-card {
+        margin: 0 1rem;
+    }
+}
+
+/* Mobile */
+@media (max-width: 576px) {
+    .container {
+        width: 100%;
+        padding: 0 15px;
+    }
+
+    .header {
+        padding: 1rem 0;
+    }
+
+    .site-logo {
+        max-width: 120px;
+    }
+
+    .social-links {
+        gap: 0.5rem;
+    }
+
+    .newsletter-signup {
+        padding: 1rem;
+    }
+
+    .popular-post {
+        flex-direction: column;
+    }
+
+    .popular-post img {
+        width: 100%;
+        height: 200px;
+    }
+
+    .recipe-image {
+        height: 200px;
+    }
+
+    .post-content {
+        padding: 1rem;
+    }
+}
+
+/* Thiết bị có màn hình rất nhỏ */
+@media (max-width: 320px) {
+    .site-logo {
+        max-width: 100px;
+    }
+
+    .nav-link {
+        font-size: 0.8rem;
+    }
+
+    .recipe-title {
+        font-size: 1.2rem;
+    }
+}
+
+/* Đảm bảo hình ảnh responsive */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Print styles */
+@media print {
+    .header,
+    .footer,
+    .sidebar,
+    .social-links,
+    .search-bar {
+        display: none;
+    }
+
+    .container {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    .post-content {
+        font-size: 12pt;
+    }
+}
+
+<link rel="stylesheet" href="assets/css/responsive.css">

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cooking Blog</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Source+Sans+Pro:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <!-- Search Bar -->
+            <div class="search-bar">
+                <form class="search-form">
+                    <input type="text" placeholder="Tìm công thức..." class="search-input">
+                    <button type="submit" class="search-button">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </form>
+            </div>
+
+            <!-- Social Media Links -->
+            <div class="social-links">
+                <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+                <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="social-link"><i class="fab fa-pinterest"></i></a>
+                <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+            </div>
+
+            <img src="assets/images/categories/images.jpg" alt="Cooking Blog Logo" class="site-logo">
+            <nav class="main-nav">
+                <ul class="nav-list">
+                    <li><a href="#" class="nav-link">Trang chủ</a></li>
+                    <li><a href="#" class="nav-link">Công thức</a></li>
+                    <li><a href="#" class="nav-link">Về chúng tôi</a></li>
+                    <li><a href="#" class="nav-link">Liên hệ</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="container main-grid">
+            <!-- Main Content -->
+            <div class="main-content">
+                <!-- Featured Categories -->
+                <section class="featured-categories">
+                    <h2 class="section-title">Danh mục nổi bật</h2>
+                    <div class="category-grid">
+                        <a href="#" class="category-card">
+                            <img src="assets/images/popular/istockphoto-881384316-612x612.jpg" alt="Món Việt">
+                            <h3>Món Việt</h3>
+                        </a>
+                        <a href="#" class="category-card">
+                            <img src="assets/images/popular/1.jpg" alt="Món Âu">
+                            <h3>Món Âu</h3>
+                        </a>
+                        <a href="#" class="category-card">
+                            <img src="assets/images/popular/2.jpg" alt="Món Ăn Kiêng">
+                            <h3>Ăn kiêng</h3>
+                        </a>
+                    </div>
+                </section>
+
+                <section class="featured-recipes">
+                    <div class="container">
+                        <h2 class="section-title">Công thức nổi bật</h2>
+                        <div class="recipe-grid">
+                            <!-- Recipe Card Template -->
+                            <article class="recipe-card">
+                                <img src="assets/images/popular/3.jpg" alt="Recipe 1" class="recipe-image">
+                                <div class="recipe-content">
+                                    <h3 class="recipe-title">Phở Bò Việt Nam</h3>
+                                    <p class="recipe-excerpt">Món phở truyền thống với nước dùng đậm đà...</p>
+                                </div>
+                            </article>
+                            <!-- Thêm các recipe card khác tương tự -->
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <!-- Sidebar -->
+            <aside class="sidebar">
+                <!-- Newsletter Signup -->
+                <div class="newsletter-signup">
+                    <h3>Đăng ký nhận công thức mới</h3>
+                    <p>Nhận công thức nấu ăn mới mỗi tuần!</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Email của bạn" required>
+                        <button type="submit">Đăng ký</button>
+                    </form>
+                </div>
+
+                <!-- Popular Posts -->
+                <div class="popular-posts">
+                    <h3>Công thức phổ biến</h3>
+                    <div class="popular-posts-list">
+                        <article class="popular-post">
+                            <img src="assets/images/popular/4.jpg" alt="Popular recipe 1">
+                            <div class="popular-post-content">
+                                <h4>Bún chả Hà Nội</h4>
+                                <p>Được xem 2,5k lần</p>
+                            </div>
+                        </article>
+                        <article class="popular-post">
+                            <img src="assets/images/popular/5.jpg" alt="Popular recipe 2">
+                            <div class="popular-post-content">
+                                <h4>Bánh mì thịt nướng</h4>
+                                <p>Được xem 2,1k lần</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </aside>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Cooking Blog. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

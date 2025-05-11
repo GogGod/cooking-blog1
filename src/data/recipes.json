@@ -1,0 +1,45 @@
+[
+  {
+    "title": "Spaghetti Carbonara",
+    "ingredients": [
+      "200g spaghetti",
+      "100g pancetta",
+      "2 large eggs",
+      "50g pecorino cheese",
+      "50g parmesan",
+      "black pepper",
+      "salt"
+    ],
+    "instructions": "Cook spaghetti in salted water. In a pan, cook pancetta until crispy. Beat eggs and mix with cheese. Combine spaghetti with pancetta and remove from heat. Stir in egg mixture quickly. Serve with extra cheese and pepper.",
+    "category": "Pasta"
+  },
+  {
+    "title": "Chicken Tikka Masala",
+    "ingredients": [
+      "500g chicken breast",
+      "200g yogurt",
+      "2 onions",
+      "2 tomatoes",
+      "2 garlic cloves",
+      "1 inch ginger",
+      "spices (cumin, coriander, garam masala)",
+      "cilantro"
+    ],
+    "instructions": "Marinate chicken in yogurt and spices. Cook onions, garlic, and ginger in a pan. Add tomatoes and spices, then chicken. Simmer until cooked. Garnish with cilantro.",
+    "category": "Indian"
+  },
+  {
+    "title": "Chocolate Cake",
+    "ingredients": [
+      "200g flour",
+      "200g sugar",
+      "100g cocoa powder",
+      "2 eggs",
+      "100g butter",
+      "200ml milk",
+      "1 tsp baking powder"
+    ],
+    "instructions": "Preheat oven to 180°C. Mix dry ingredients. Add eggs, melted butter, and milk. Pour into a cake tin and bake for 30 minutes. Cool and serve.",
+    "category": "Dessert"
+  }
+]
