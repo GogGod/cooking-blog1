@@ -3,7 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cooking Blog</title>
+    <title>Delicious Kitchen - Ẩm Thực Việt Nam</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="assets/favicon/favicon_io/android-chrome-512x512.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/favicon_io/android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon_io/favicon-16x16.png">
+    
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/responsive.css">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Source+Sans+Pro:wght@400;600&display=swap" rel="stylesheet">
@@ -12,6 +19,25 @@
 <body>
     <header class="header">
         <div class="container">
+            <div class="header-top">
+                <!-- Logo bên trái -->
+                <div class="logo-container">
+                    <a href="/">
+                        <img src="assets/images/categories/images.jpg" alt="Delicious Kitchen Logo" class="site-logo">
+                    </a>
+                </div>
+                
+                <!-- Tiêu đề ở giữa -->
+                <div class="site-title">
+                    <h1>Delicious Kitchen</h1>
+                    <p class="site-slogan">Khám Phá Hương Vị Thế Giới</p>
+                </div>
+                
+                <!-- Để cân bằng layout -->
+                <div class="header-right">
+                    <!-- Có thể thêm nội dung khác ở đây -->
+                </div>
+            </div>
             <!-- Search Bar -->
             <div class="search-bar">
                 <form class="search-form">
@@ -24,19 +50,64 @@
 
             <!-- Social Media Links -->
             <div class="social-links">
-                <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
-                <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
-                <a href="#" class="social-link"><i class="fab fa-pinterest"></i></a>
-                <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+                <a href="#" class="social-link facebook"><i class="fab fa-facebook"></i></a>
+                <a href="#" class="social-link instagram"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="social-link pinterest"><i class="fab fa-pinterest"></i></a>
+                <a href="#" class="social-link youtube"><i class="fab fa-youtube"></i></a>
             </div>
 
-            <img src="assets/images/categories/images.jpg" alt="Cooking Blog Logo" class="site-logo">
             <nav class="main-nav">
                 <ul class="nav-list">
                     <li><a href="#" class="nav-link">Trang chủ</a></li>
-                    <li><a href="#" class="nav-link">Công thức</a></li>
+                    <li class="has-dropdown">
+                        <a href="#" class="nav-link">Danh mục <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="/mon-viet">Món Việt</a></li>
+                            <li><a href="/mon-au">Món Âu</a></li>
+                            <li><a href="/mon-a">Món Á</a></li>
+                            <li><a href="/an-kieng">Món Ăn Kiêng</a></li>
+                            <li><a href="/mon-chay">Món Chay</a></li>
+                            <li><a href="/banh">Bánh & Dessert</a></li>
+                        </ul>
+                    </li>
+                    <li class="has-dropdown">
+                        <a href="#" class="nav-link">Công thức <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="/cong-thuc/mon-moi">Món Mới</a></li>
+                            <li><a href="/cong-thuc/pho-bien">Phổ Biến Nhất</a></li>
+                            <li><a href="/cong-thuc/nhanh-gon">Nấu Nhanh</a></li>
+                            <li><a href="/cong-thuc/dinh-duong">Dinh Dưỡng</a></li>
+                            <li class="has-submenu">
+                                <a href="#">Theo Bữa Ăn <i class="fas fa-chevron-right"></i></a>
+                                <ul class="submenu">
+                                    <li><a href="/cong-thuc/bua-sang">Bữa Sáng</a></li>
+                                    <li><a href="/cong-thuc/bua-trua">Bữa Trưa</a></li>
+                                    <li><a href="/cong-thuc/bua-toi">Bữa Tối</a></li>
+                                    <li><a href="/cong-thuc/an-vat">Ăn Vặt</a></li>
+                                </ul>
+                            </li>
+                            <li class="has-submenu">
+                                <a href="#">Theo Cách Nấu <i class="fas fa-chevron-right"></i></a>
+                                <ul class="submenu">
+                                    <li><a href="/cong-thuc/chien">Chiên/Xào</a></li>
+                                    <li><a href="/cong-thuc/ham">Hầm/Ninh</a></li>
+                                    <li><a href="/cong-thuc/nuong">Nướng</a></li>
+                                    <li><a href="/cong-thuc/hap">Hấp/Luộc</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
                     <li><a href="#" class="nav-link">Về chúng tôi</a></li>
-                    <li><a href="#" class="nav-link">Liên hệ</a></li>
+                    <li class="has-dropdown">
+                        <a href="#" class="nav-link">Liên hệ <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="/lien-he/red">Siêu Nhân Đỏ</a></li>
+                            <li><a href="/lien-he/blue">Siêu Nhân Xanh</a></li>
+                            <li><a href="/lien-he/black">Siêu Nhân Đen</a></li>
+                            <li><a href="/lien-he/yellow">Siêu Nhân Vàng</a></li>
+                            <li><a href="/lien-he/pink">Siêu Nhân Hồng</a></li>
+                        </ul>
+                    </li>
                 </ul>
             </nav>
         </div>
@@ -69,15 +140,61 @@
                     <div class="container">
                         <h2 class="section-title">Công thức nổi bật</h2>
                         <div class="recipe-grid">
-                            <!-- Recipe Card Template -->
+                            <!-- Phở -->
                             <article class="recipe-card">
-                                <img src="assets/images/popular/3.jpg" alt="Recipe 1" class="recipe-image">
+                                <img src="assets/images/popular/3.jpg" alt="Phở Bò Việt Nam" class="recipe-image">
                                 <div class="recipe-content">
                                     <h3 class="recipe-title">Phở Bò Việt Nam</h3>
                                     <p class="recipe-excerpt">Món phở truyền thống với nước dùng đậm đà...</p>
+                                    <div class="recipe-meta">
+                                        <span><i class="far fa-clock"></i> 120 phút</span>
+                                        <span><i class="far fa-user"></i> 4 người</span>
+                                    </div>
+                                    <a href="/cong-thuc/pho" class="recipe-button">Xem công thức</a>
                                 </div>
                             </article>
-                            <!-- Thêm các recipe card khác tương tự -->
+
+                            <!-- Mì Ý -->
+                            <article class="recipe-card">
+                                <img src="assets/images/popular/6.jpg" alt="Mì Ý Sốt Bò Bằm" class="recipe-image">
+                                <div class="recipe-content">
+                                    <h3 class="recipe-title">Mì Ý Sốt Bò Bằm</h3>
+                                    <p class="recipe-excerpt">Mì Ý đậm đà với sốt bò bằm kiểu Ý truyền thống...</p>
+                                    <div class="recipe-meta">
+                                        <span><i class="far fa-clock"></i> 45 phút</span>
+                                        <span><i class="far fa-user"></i> 4 người</span>
+                                    </div>
+                                    <a href="/cong-thuc/mi-y" class="recipe-button">Xem công thức</a>
+                                </div>
+                            </article>
+
+                            <!-- Pizza -->
+                            <article class="recipe-card">
+                                <img src="assets/images/popular/7.jpg" alt="Pizza Hải Sản" class="recipe-image">
+                                <div class="recipe-content">
+                                    <h3 class="recipe-title">Pizza Hải Sản</h3>
+                                    <p class="recipe-excerpt">Pizza đế giòn với hải sản tươi ngon và phô mai béo ngậy...</p>
+                                    <div class="recipe-meta">
+                                        <span><i class="far fa-clock"></i> 60 phút</span>
+                                        <span><i class="far fa-user"></i> 6 người</span>
+                                    </div>
+                                    <a href="/cong-thuc/pizza" class="recipe-button">Xem công thức</a>
+                                </div>
+                            </article>
+
+                            <!-- Hamburger -->
+                            <article class="recipe-card">
+                                <img src="assets/images/popular/8.jpg" alt="Hamburger Bò" class="recipe-image">
+                                <div class="recipe-content">
+                                    <h3 class="recipe-title">Hamburger Bò Phô Mai</h3>
+                                    <p class="recipe-excerpt">Burger bò với phô mai tan chảy và sốt đặc biệt...</p>
+                                    <div class="recipe-meta">
+                                        <span><i class="far fa-clock"></i> 30 phút</span>
+                                        <span><i class="far fa-user"></i> 2 người</span>
+                                    </div>
+                                    <a href="/cong-thuc/hamburger" class="recipe-button">Xem công thức</a>
+                                </div>
+                            </article>
                         </div>
                     </div>
                 </section>
@@ -119,9 +236,44 @@
         </div>
     </main>
 
-    <footer class="footer">
+    <footer class="site-footer">
         <div class="container">
-            <p>&copy; 2025 Cooking Blog. All rights reserved.</p>
+            <div class="footer-grid">
+                <!-- Phần Giới Thiệu -->
+                <div class="footer-section">
+                    <h3 class="footer-title">Về Chúng Tôi</h3>
+                    <ul class="footer-links">
+                        <li><a href="/gioi-thieu">Giới Thiệu</a></li>
+                        <li><a href="/blog">Blog</a></li>
+                        <li><a href="/danh-muc-mon-an">Danh Mục Món Ăn</a></li>
+                        <li><a href="/tai-nguyen">Tài Nguyên Blog</a></li>
+                        <li><a href="/bao-cao">Báo Cáo Thu Nhập</a></li>
+                        <li><a href="/tai-tro">Nội Dung Tài Trợ</a></li>
+                        <li><a href="/bao-chi">Báo Chí Đề Cập</a></li>
+                        <li><a href="/lien-he">Liên Hệ</a></li>
+                    </ul>
+</div>
+
+                <!-- Phần Món Ăn & Công Thức -->
+                <div class="footer-section">
+                    <h3 class="footer-title">Món Ăn & Công Thức</h3>
+                    <ul class="footer-links">
+                        <li><a href="/khong-duong">Tháng Không Đường</a></li>
+                        <li><a href="/dong-lanh">Món Ăn Đông Lạnh 101</a></li>
+                        <li><a href="/nhanh-gon">Món Ăn Nhanh</a></li>
+                        <li><a href="/noi-ap-suat">Món Nồi Áp Suất</a></li>
+                        <li><a href="/my-pasta">Các Món Pasta</a></li>
+                        <li><a href="/chay">Món Chay</a></li>
+                        <li><a href="/sup">Các Món Súp</a></li>
+                        <li><a href="/tacos">Món Tacos</a></li>
+                        <li><a href="/meal-prep">Chuẩn Bị Bữa Ăn</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Blog Nấu Ăn. Đã đăng ký bản quyền.</p>
+            </div>
         </div>
     </footer>
 

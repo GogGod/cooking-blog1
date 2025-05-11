@@ -1,6 +1,6 @@
 /* Desktop First Approach */
 
-/* Màn hình lớn (Large desktop) */
+/* Large desktop */
 @media (min-width: 1200px) {
     .container {
         max-width: 1140px;
@@ -13,7 +13,7 @@
     }
 }
 
-/* Màn hình desktop thường */
+/* Desktop */
 @media (max-width: 1199px) {
     .container {
         max-width: 960px;
@@ -32,11 +32,6 @@
 
     .main-grid {
         grid-template-columns: 1fr;
-        gap: 2rem;
-    }
-
-    .category-grid {
-        grid-template-columns: repeat(2, 1fr);
     }
 
     .site-logo {
@@ -44,7 +39,7 @@
     }
 }
 
-/* Tablet nhỏ và Mobile lớn */
+/* Mobile */
 @media (max-width: 768px) {
     .container {
         max-width: 540px;
@@ -65,21 +60,18 @@
         grid-template-columns: 1fr;
     }
 
-    .search-form {
-        max-width: 100%;
-        padding: 0 1rem;
+    .footer-grid {
+        grid-template-columns: 1fr;
+        text-align: center;
     }
 
-    .post-title {
-        font-size: 2rem;
-    }
-
-    .recipe-card {
-        margin: 0 1rem;
+    .footer-title::after {
+        left: 50%;
+        transform: translateX(-50%);
     }
 }
 
-/* Mobile */
+/* Small Mobile */
 @media (max-width: 576px) {
     .container {
         width: 100%;
@@ -94,29 +86,8 @@
         max-width: 120px;
     }
 
-    .social-links {
-        gap: 0.5rem;
-    }
-
-    .newsletter-signup {
-        padding: 1rem;
-    }
-
-    .popular-post {
-        flex-direction: column;
-    }
-
-    .popular-post img {
-        width: 100%;
-        height: 200px;
-    }
-
     .recipe-image {
         height: 200px;
-    }
-
-    .post-content {
-        padding: 1rem;
     }
 }
 
@@ -145,9 +116,7 @@ img {
 @media print {
     .header,
     .footer,
-    .sidebar,
-    .social-links,
-    .search-bar {
+    .sidebar {
         display: none;
     }
 
@@ -162,4 +131,3 @@ img {
     }
 }
 
-<link rel="stylesheet" href="assets/css/responsive.css">
